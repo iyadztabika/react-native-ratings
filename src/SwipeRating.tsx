@@ -223,11 +223,6 @@ export default class SwipeRating extends Component<
       fractions
     } = this.props;
     const position = new Animated.ValueXY();
-    const starContainerStyle = [styles.starContainer];
-
-    if ( this.props.starContainerStyle ) {
-      starContainerStyle.push( this.props.starContainerStyle );
-    }
 
     const panResponder = PanResponder.create( {
       onStartShouldSetPanResponder: () => true,
@@ -379,8 +374,14 @@ export default class SwipeRating extends Component<
     const { imageSize, ratingCount, type, tintColor } = this.props;
     const { source } = TYPES[type];
 
+    const starContainerStyle = [styles.starContainer];
+
+    if ( this.props.starContainerStyle ) {
+      starContainerStyle.push( this.props.starContainerStyle );
+    }
+
     return times( ratingCount, index =>
-      <View key={index} style={styles.starContainer}>
+      <View key={index} style={starContainerStyle}>
         <Image
           source={source}
           style={{ width: imageSize, height: imageSize, tintColor }}
