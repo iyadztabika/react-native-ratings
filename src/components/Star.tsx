@@ -86,6 +86,6 @@ export default Star;
 
 const styles = StyleSheet.create( {
   starStyle: {
-    margin: 3
+    marginRight: 15
   }
 } );
