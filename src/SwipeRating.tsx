@@ -585,5 +585,10 @@ const styles = StyleSheet.create( {
     textAlign: "center",
     fontFamily: Platform.OS === "ios" ? "Trebuchet MS" : null,
     color: "#34495e"
+  },
+  starContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center"
   }
 } );
