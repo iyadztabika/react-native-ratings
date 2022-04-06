@@ -169,11 +169,12 @@ export default class SwipeRating extends Component {
         const { imageSize, ratingCount, type, tintColor } = this.props;
         const { source } = TYPES[type];
         const starContainerStyle = [styles.starContainer];
-        if (this.props.starContainerStyle) {
-            starContainerStyle.push(this.props.starContainerStyle);
+        const starContainerProps = this.props.starContainerStyle;
+        if (starContainerProps) {
+            starContainerStyle.push(starContainerProps);
         }
         return times(ratingCount, index => <View key={index} style={starContainerStyle}>
-        <Image source={source} style={{ width: imageSize, height: imageSize, tintColor }}/>
+        <Image source={source} style={{ width: imageSize, height: imageSize, tintColor, marginRight: starContainerProps ? 15 : 0 }}/>
       </View>);
     }
     // eslint-disable-next-line max-statements

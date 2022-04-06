@@ -375,16 +375,17 @@ export default class SwipeRating extends Component<
     const { source } = TYPES[type];
 
     const starContainerStyle = [styles.starContainer];
+    const starContainerProps = this.props.starContainerStyle
 
-    if ( this.props.starContainerStyle ) {
-      starContainerStyle.push( this.props.starContainerStyle );
+    if ( starContainerProps ) {
+      starContainerStyle.push( starContainerProps );
     }
 
     return times( ratingCount, index =>
       <View key={index} style={starContainerStyle}>
         <Image
           source={source}
-          style={{ width: imageSize, height: imageSize, tintColor }}
+          style={{ width: imageSize, height: imageSize, tintColor, marginRight: starContainerProps ? 15 : 0 }}
         />
       </View>
     );
