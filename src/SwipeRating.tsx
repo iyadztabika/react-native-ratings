@@ -380,7 +380,7 @@ export default class SwipeRating extends Component<
     const { source } = TYPES[type];
 
     return times( ratingCount, index =>
-      <View key={index} style={styles.starContainerStyle}>
+      <View key={index} style={styles.starContainer}>
         <Image
           source={source}
           style={{ width: imageSize, height: imageSize, tintColor }}
