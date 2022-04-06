@@ -384,7 +384,7 @@ export default class SwipeRating extends Component<
       <View key={index} style={starContainerStyle}>
         <Image
           source={source}
-          style={{ width: imageSize, height: imageSize, tintColor, marginRight: 15 }}
+          style={{ width: imageSize, height: imageSize, tintColor }}
         />
       </View>
     );

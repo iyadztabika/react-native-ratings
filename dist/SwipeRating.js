@@ -173,7 +173,7 @@ export default class SwipeRating extends Component {
             starContainerStyle.push(this.props.starContainerStyle);
         }
         return times(ratingCount, index => <View key={index} style={starContainerStyle}>
-        <Image source={source} style={{ width: imageSize, height: imageSize, tintColor, marginRight: 15 }}/>
+        <Image source={source} style={{ width: imageSize, height: imageSize, tintColor }}/>
       </View>);
     }
     // eslint-disable-next-line max-statements
