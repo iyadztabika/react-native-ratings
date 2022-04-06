@@ -41,6 +41,6 @@ Star.defaultProps = {
 export default Star;
 const styles = StyleSheet.create({
     starStyle: {
-        marginRight: 15
+        margin: 3
     }
 });
