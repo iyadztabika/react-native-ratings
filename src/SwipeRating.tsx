@@ -352,7 +352,7 @@ export default class SwipeRating extends Component<
           ratingCount * ( imageSize / 2 )
         ],
         outputRange: [
-          ratingCount * imageSize / 2,
+          ratingCount * imageSize,
           ratingCount * imageSize / 2,
           0
         ],
