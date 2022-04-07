@@ -353,7 +353,7 @@ export default class SwipeRating extends Component<
         ],
         outputRange: [
           ratingCount * imageSize,
-          ratingCount * imageSize * 2,
+          ratingCount * imageSize / 2,
           0
         ],
         extrapolate: "clamp"
