@@ -121,7 +121,7 @@ export default class SwipeRating extends Component {
         const { color } = TYPES[type];
         const width = position.x.interpolate({
             inputRange: [
-                -ratingCount * (imageSize / 2),
+                ratingCount * (imageSize / 2),
                 0,
                 ratingCount * (imageSize / 2)
             ],
