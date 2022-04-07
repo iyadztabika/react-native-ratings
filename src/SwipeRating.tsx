@@ -521,6 +521,7 @@ export default class SwipeRating extends Component<
             }}
           >
             <Animated.View style={this.getPrimaryViewStyle()} />
+            <Animated.View style={this.getSecondaryViewStyle()} />
           </View>
           {this.renderRatings()}
         </View>
