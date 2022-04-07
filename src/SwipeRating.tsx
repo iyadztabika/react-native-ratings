@@ -394,7 +394,7 @@ export default class SwipeRating extends Component<
   getCurrentRating( value ) {
     const { fractions, imageSize, ratingCount } = this.props;
 
-    const startingValue = ratingCount / 2;
+    const startingValue = ratingCount;
 
     let currentRating = this.props.minValue ? this.props.minValue : 0;
 
