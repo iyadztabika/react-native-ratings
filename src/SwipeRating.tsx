@@ -544,7 +544,7 @@ const styles = StyleSheet.create( {
     position: "absolute",
     top: 0,
     left: 0,
-    right: 0,
+    right: 20,
     bottom: 0,
     flexDirection: "row",
     justifyContent: "center",
